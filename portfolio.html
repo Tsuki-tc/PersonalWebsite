@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/SYSTEM.LOG: PORTFOLIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        :root {
+            --neon-green: #39ff14;
+            --neon-shadow: 0 0 5px var(--neon-green), 
+                           0 0 10px var(--neon-green), 
+                           0 0 20px var(--neon-green), 
+                           0 0 40px rgba(57, 255, 20, 0.4);
+            --dark-bg: #0d0d0d;
+        }  
+        .neon-border {
+            border: 2px solid var(--neon-green);
+            box-shadow: var(--neon-shadow);
+        }
+
+        body {
+            font-family: 'Bitcount PropSingle', monospace, sans-serif; 
+            color: #ffffff;
+            background-image: url(space.png);
+        
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .neon-border {
+            border: 2px solid var(--neon-green);
+            box-shadow: var(--neon-shadow);
+        }
+
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid rgba(57, 255, 20, 0.2);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--neon-shadow);
+            border-color: var(--neon-green);
+            cursor: pointer;
+        }
+        
+        .neon-text {
+            color: var(--neon-green);
+            text-shadow: var(--neon-shadow);
+        }
+        
+        .img-container {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .project-card:hover .img-container img {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body class="flex flex-col items-center justify-start py-12 px-4">
+
+    <div class="w-full max-w-6xl p-8 bg-black/80 rounded-xl neon-border">
+        
+        <header class="mb-10">
+            <div class="text-center mb-8">
+                <a href="index.html" class="text-xs tracking-widest uppercase hover:text-green-300 transition duration-300">
+                    &lt;[00] RETURN TO MENU&gt;
+                </a>
+            </div>
+            
+            <h1 class="text-4xl font-bold text-center tracking-widest neon-text">
+                PORTFOLIO|SG
+            </h1>
+            <p class="text-center mt-2 text-sm text-gray-400">
+                [04] EXAMPLES OF MY WORK | RESUME
+            </p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <a href="https://www.instagram.com/tunes.ciit/" class="block project-card bg-gray-900/50 rounded-lg overflow-hidden">
+                <div class="img-container">
+                    <img src="GA.png" alt="General Assembly Project" >
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1 neon-text">GENERAL ASSEMBLY</h3>
+                    <p class="text-xs uppercase text-gray-400 mb-2">Category: CREATIVES/MARKETING</p>
+                    <p class="text-sm text-gray-300">
+                    I created a pubmat that would showcase the tunes organization general assembly, along with it's captions
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/tunes.ciit/" class="block project-card bg-gray-900/50 rounded-lg overflow-hidden">
+                <div class="img-container">
+                    <img src="Auditunes.png" alt="Auditunes Highlights" >
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1 neon-text">AUDITUNES HIGHLIGHTS</h3>
+                    <p class="text-xs uppercase text-gray-400 mb-2">Category: CREATIVES/MARKETING</p>
+                    <p class="text-sm text-gray-300">
+                        A post showcasing tunes auditions (or auditunes). I made the pubmats and captions as well.
+                        </p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/tunes.ciit/" class="block project-card bg-gray-900/50 rounded-lg overflow-hidden">
+                <div class="img-container">
+                    <img src="Bangungot.png" alt="Bangungot Despair of Faire">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1 neon-text">BANGUNGOT: DESPAIR OF FAIRE</h3>
+                    <p class="text-xs uppercase text-gray-400 mb-2">Category: CREATIVES/MARKETING</p>
+                    <p class="text-sm text-gray-300">
+                        Created a pubmat in theme with coscade's bangungot despair fair, showcasing photos taken of tunesies who performed
+                    </p>
+                </div>
+            </a>
+            
+            <a href="https://docs.google.com/document/d/1ItXX3ray2lLzgijmjCeFzVUhRw-ebFgQRQVITVL950U/edit?usp=sharing" target="_blank" class="block project-card bg-gray-900/50 rounded-lg overflow-hidden">
+                <div class="img-container">
+                    <img src="pfp.jpg" alt="Technical Documentation">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-1 neon-text">TECHNICAL DOCUMENTATION</h3>
+                    <p class="text-xs uppercase text-gray-400 mb-2">Category: RESUME</p>
+                    <p class="text-sm text-gray-300">
+                        Here is the google doc for my resume to know more about my work background and educational background. (Click to view Gdoc)
+                    </p>
+                </div>
+            </a>
+
+        </main>
+        
+        <div class="mt-10 pt-4 border-t border-gray-700/50 flex justify-between text-xs tracking-wider neon-text">
+            <span>STATUS: ONLINE</span>
+            <span>LAST LOG: 12.04.25</span>
+            <span>PROTOCOL: :> </span>
+        </div>
+
+    </div>
+
+</body>
+</html>

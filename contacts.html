@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts | SG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+        
+        @font-face {
+            font-family: 'Bitcount Prop Single';
+            src: url('fonts/BitcountPropSingle.woff2') format('woff2'),
+                 url('fonts/BitcountPropSingle.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Bitcount Prop Single', monospace;
+            background-image: url('space.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #000000;
+        }
+        
+        .neon-green {
+            color: #00ff00;
+            text-shadow: 0 0 3px #00ff00;
+        }
+        
+        .log-line {
+            padding: 10px 0;
+            border-bottom: 1px dashed rgba(0, 255, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+        .log-line:hover {
+            background-color: rgba(0, 255, 0, 0.05); 
+        }
+        
+        .output-box {
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+        
+        .prompt {
+            color: #00ff00;
+            text-shadow: 0 0 5px #00ff00;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <header class="w-full max-w-4xl mb-8">
+        <a href="index.html" class="inline-flex items-center text-sm uppercase tracking-widest transition-colors duration-200 neon-green hover:text-white">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            [00] RETURN TO MENU
+        </a>
+    </header>
+
+    <main class="w-full max-w-4xl">
+        <div class="output-box p-8 md:p-12 rounded-lg space-y-2 text-base tracking-wide text-gray-300">
+            
+            <h1 class="text-3xl md:text-5xl uppercase font-bold text-white mb-8 text-center neon-green">
+                CONTACTS
+            </h1>
+
+            
+            <a href="mailto:email@example.com" class="log-line grid grid-cols-1 sm:grid-cols-2 gap-2 hover:text-white" target="_blank">
+                <span class="prompt">EMAIL :</span>
+                <span class="text-white underline">sidneimya1715@gmail.com</span>
+            </a>
+            
+            <a href="tel:+15555551234" class="log-line grid grid-cols-1 sm:grid-cols-2 gap-2 hover:text-white">
+                <span class="prompt">MOBILE PHONE NO. :</span>
+                <span class="text-white underline">09452157379</span>
+            </a>
+
+            <a href="https://facebook.com/dis.neiiii" class="log-line grid grid-cols-1 sm:grid-cols-2 gap-2 hover:text-white" target="_blank">
+                <span class="prompt">FACEBOOK:</span>
+                <span class="text-white underline">Sidnei Gordo &rarr;</span>
+            </a>
+
+            <a href="https://instagram.com/dis.neiiii" class="log-line grid grid-cols-1 sm:grid-cols-2 gap-2 hover:text-white" target="_blank">
+                <span class="prompt">INSTAGRAM:</span>
+                <span class="text-white underline">@dis.neiiii &rarr;</span>
+            </a>
+
+            <div class="pt-8 text-xs text-center text-gray-500">
+                FEEL FREE TO CONTACT|MOSTLY REPLIES TO EMAILS
+            </div>
+
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidnei Gordo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --neon-green: #39ff14;
+            --neon-shadow: 0 0 5px var(--neon-green), 
+                           0 0 10px var(--neon-green), 
+                           0 0 20px var(--neon-green), 
+                           0 0 40px rgba(57, 255, 20, 0.4); 
+            --dark-bg: #0d0d0d;
+        }
+
+        body {
+            font-family: 'Bitcount PropSingle', monospace, sans-serif; 
+            color: #ffffff;
+            background-color: var(--dark-bg);
+            background-image: url('https://placehold.co/1920x1080/000/39ff14?text=SPACE_BACKGROUND'); 
+            background-size: cover;
+            background-attachment: fixed;
+            
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .neon-text {
+            color: var(--neon-green);
+            text-shadow: var(--neon-shadow);
+        }
+
+        .neon-border {
+            border: 2px solid var(--neon-green);
+            box-shadow: var(--neon-shadow);
+        }
+
+        @keyframes fadePulse {
+            0% { opacity: 0.1; } 
+            50% { opacity: 1; }  
+            100% { opacity: 0.1; } 
+        }
+
+        .blinking-text {
+            animation: fadePulse 3s infinite ease-in-out; 
+        }
+    </style>
+    </head>
+<body>
+     <h1 class="text-6xl md:text-8xl tracking-widest neon-text mb-6 blinking-text">
+        HELLO!
+    </h1>
+     <div class="Background">
+   </div>
+    <div class="menu-container">
+        <a href="aboutme.html" class="menu-item" tabindex="0">
+            <span class="option-number">01</span>
+            <span class="option-text">About Me</span>
+        </a>
+        <a href="contacts.html" class="menu-item" tabindex="0">
+            <span class="option-number">02</span>
+            <span class="option-text">Contacts</span>
+        </a>
+        <a href="portfolio.html" class="menu-item" tabindex="0">
+            <span class="option-number">03</span>
+            <span class="option-text">Portfolio</span>
+        </a>
+    </div>
+</body>
+</html>

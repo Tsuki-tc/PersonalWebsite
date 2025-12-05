@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | SG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Bitcount Prop Single';
+            src: url('fonts/BitcountPropSingle.woff2') format('woff2'),
+                 url('fonts/BitcountPropSingle.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bitcount Prop Single', monospace;
+            background-image: url('space.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #000000;
+        }
+        
+        .neon-green {
+            color: #00ff00;
+            text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+        }
+        
+        .glow-box {
+            border: 2px solid #00ff00;
+            box-shadow: 
+                0 0 15px rgba(0, 255, 0, 0.6), 
+                0 0 30px rgba(0, 255, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.5); }
+            100% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.3); }
+        }
+        .animate-glow {
+             animation: pulse-glow 4s infinite alternate;
+        }
+
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <header class="w-full max-w-4xl mb-8">
+        <a href="index.html" class="inline-flex items-center text-sm uppercase tracking-widest transition-colors duration-200 neon-green hover:text-white">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            [00] RETURN TO MENU
+        </a>
+    </header>
+
+    <main class="w-full max-w-4xl">
+        <style>
+        :root {
+            --neon-green: #39ff14;
+            --neon-shadow: 0 0 5px var(--neon-green), 
+                           0 0 10px var(--neon-green), 
+                           0 0 20px var(--neon-green), 
+                           0 0 40px rgba(57, 255, 20, 0.4);
+            --dark-bg: #0d0d0d;
+        }  
+        .neon-border {
+            border: 2px solid var(--neon-green);
+            box-shadow: var(--neon-shadow);
+        }
+        .neon-pfp {
+            border: 5px solid transparent; 
+            border-radius: 50%;
+            padding: 10px;
+            
+            box-shadow: var(--neon-shadow), 
+                        inset 0 0 10px var(--neon-green); 
+            
+            object-fit: cover;
+        }
+    </style>
+    <div class="w-full max-w-4xl p-8 bg-black/80 rounded-xl neon-border">
+        
+        <div class="text-center mb-8">
+            <a href="#" class="text-xs tracking-widest uppercase hover:text-green-300 transition duration-300">
+                &lt;[00] RETURN TO MENU&gt;
+            </a>
+        </div>
+        
+        <div class="flex justify-center mb-10">
+           
+            <img 
+                src="pfp.jpg" 
+                alt="Profile Picture" 
+                class="neon-pfp h-40 w-40" 
+            >
+        </div>
+            <h1 class="text-3xl md:text-5xl uppercase font-bold text-white mb-6 text-center neon-green">
+                SYSTEM.LOG: ABOUT ME
+            </h1>
+
+            <section class="border-b border-green-700 pb-4">
+                <p class="neon-green mb-2 text-lg">
+                    [01] A BRIEF INTRODUCTION
+                </p>
+                <p class="text-gray-300">
+                    My name is Sidnei M. Gordo. I am 20 years old, currently enrolled in CIIT College of Arts and Technology taking Bachelor of Science in Information Systems.
+                </p>
+            </section>
+
+            <section class="border-b border-green-700 pb-4">
+                <p class="neon-green mb-2 text-lg">
+                    [02] SKILLS
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-300">
+                    <div>
+                        <span class="text-white">1.</span> Possess a satisfactory level of written and oral English proficiency.
+
+                    <div>
+                        <span class="text-white">2.</span> Ability to assess problems and provide a well thought of solution
+                    </div>
+                    <div>
+                        <span class="text-white">3.</span> People-Oriented and flexible enough to adjust to changes with ease
+                </div>
+            </section>
+
+            <section>
+                <p class="neon-green mb-2 text-lg">
+                    [03] CAREER OBJECTIVE
+                </p>
+                <p class="text-gray-300">
+                    To leverage my skills and experience and to contribute effectively to a dynamic team, while continuously learning and advancing in a challenging and rewarding environment.
+
+                    To secure a responsible career opportunity to not only utilize my skills but also to enhance it while contributing to the success of the company
+
+            </section>
+            
+            <div class="pt-4 text-xs text-right text-gray-500">
+                STATUS: ONLINE | LAST LOG: 12.04.25 | PROTOCOL: :>
+            </div>
+
+        </div>
+    </main>
+    
+</body>
+</html>
